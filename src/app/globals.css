@@ -2,20 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+/* set table project status */
+
+.complete-cell {
+  background-color: #109A4E1F;
+  color: #109A4E;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  height: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.inprogress-cell {
+  background-color: #FF46461F;
+  color: #FF4646;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  height: 28px;
+  display: inline;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+/* styles.css */
+.even {
+  background-color: #FFFFFF; /* Light gray for even rows */
+  /* font-size: 14px;
+  font-weight: 500; */
 }
+
+.odd {
+  background-color: #F8F9FC; /* White for odd rows */
+  /* font-size: 14px;
+  font-weight: 500; */
+}
+
+
+
+/* Custom Scrollbar CSS */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CACACA; 
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e3e3e3; 
+}
+
+
